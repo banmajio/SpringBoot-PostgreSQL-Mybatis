@@ -1,0 +1,15 @@
+server:
+  servlet:
+    context-path: /PostgreSQL
+  port: 8080
+  
+spring:
+  datasource:
+    url: jdbc:postgresql://192.168.11.12:5432/1912
+    username: postgres
+    password: 123456
+    driver-class-name: org.postgresql.Driver
+
+mybatis:
+  type-aliases-package: com.banmajio.bean
+  mapper-locations: classpath:mapper/*.xml
